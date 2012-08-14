@@ -1,6 +1,6 @@
 {
   "name": "once",
-  "version": "0.0.0",
+  "version": "1.1.1",
   "description": "Run a function exactly one time",
   "main": "once.js",
   "directories": {
