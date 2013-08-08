@@ -10,10 +10,11 @@ once.proto = once(function () {
 })
 
 function once (fn) {
-  var called = false
-  return function () {
-    if (called) return
-    called = true
+  var f = function () {
+    if (f.called) return
+    f.called = true
     return fn.apply(this, arguments)
   }
+  f.called = false
+  return f
 }
