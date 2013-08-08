@@ -8,9 +8,11 @@ test('once', function (t) {
     f ++
     return f + g + this
   })
+  t.notOk(foo.called)
   for (var i = 0; i < 1E3; i++) {
     t.same(f, i === 0 ? 0 : 1)
     var g = foo.call(1, 1)
+    t.ok(foo.called)
     t.same(g, i === 0 ? 3 : undefined)
     t.same(f, 1)
   }
