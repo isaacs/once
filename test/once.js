@@ -13,7 +13,7 @@ test('once', function (t) {
     t.same(f, i === 0 ? 0 : 1)
     var g = foo.call(1, 1)
     t.ok(foo.called)
-    t.same(g, i === 0 ? 3 : undefined)
+    t.same(g, 3)
     t.same(f, 1)
   }
   t.end()
