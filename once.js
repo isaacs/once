@@ -11,9 +11,9 @@ once.proto = once(function () {
 
 function once (fn) {
   var f = function () {
-    if (f.called) return
+    if (f.called) return f.value
     f.called = true
-    return fn.apply(this, arguments)
+    return f.value = fn.apply(this, arguments)
   }
   f.called = false
   return f
