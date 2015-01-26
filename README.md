@@ -32,7 +32,7 @@ function load (file, cb) {
 Ironically, the prototype feature makes this module twice as
 complicated as necessary.
 
-To check whether you function has been called, use `fn.called`. Once the
+To check whether your function has been called, use `fn.called`. Once the
 function is called for the first time the return value of the original
 function is saved in `fn.value` and subsequent calls will continue to
 return this value.
