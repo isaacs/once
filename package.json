@@ -15,6 +15,9 @@
   "scripts": {
     "test": "tap test/*.js"
   },
+  "files": [
+    "once.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/isaacs/once"
