@@ -5,7 +5,7 @@ test('once', function (t) {
   var f = 0
   function fn (g) {
     t.equal(f, 0)
-    f ++
+    f++
     return f + g + this
   }
   fn.ownProperty = {}
@@ -26,7 +26,7 @@ test('once.strict with named function', function (t) {
   var f = 0
   function fn (g) {
     t.equal(f, 0)
-    f ++
+    f++
     return f + g + this
   }
   fn.ownProperty = {}
