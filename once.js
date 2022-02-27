@@ -2,7 +2,7 @@ var wrappy = require('wrappy')
 module.exports = wrappy(once)
 module.exports.strict = wrappy(onceStrict)
 
-once.proto = once(function () {
+module.exports.proto = once(function () {
   Object.defineProperty(Function.prototype, 'once', {
     value: function () {
       return once(this)
