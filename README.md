@@ -72,8 +72,8 @@ function log (msg) {
 }
 
 // this will print 'Hello anonymous' but the logical error will be missed
-greet(null, once(msg))
+greet(null, once(log))
 
 // once.strict will print 'Hello anonymous' and throw an error when the callback will be called the second time
-greet(null, once.strict(msg))
+greet(null, once.strict(log))
 ```
